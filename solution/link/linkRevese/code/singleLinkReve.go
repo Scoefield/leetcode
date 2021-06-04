@@ -1,3 +1,4 @@
+package main
 
 // 定义节点结构体
 type Node struct {
@@ -26,3 +27,6 @@ func (l *LinkList) ReverseList() {
 	l.Header = pre
 }
 
+func main() {
+
+}

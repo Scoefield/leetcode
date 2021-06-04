@@ -6,7 +6,7 @@ type LinkNode struct {
 }
 
 func reversePrint(head *LinkNode) []int {
-	rest := []int{}
+	rest := make([]int, 0)
 	for head != nil {
 		rest = append([]int{head.Val}, rest...)
 		head = head.Next
