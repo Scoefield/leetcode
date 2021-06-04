@@ -14,7 +14,7 @@
 
 示例 1：
 
-![1](./images/linkCycle1.png)
+![1](./images/linkcycle1.png)
 
 ```
 输入：head = [3,2,0,-4], pos = 1
@@ -24,7 +24,7 @@
 
 示例 2：
 
-![2](./images/linkCycle2.png)
+![2](./images/linkcycle2.png)
 
 ```
 输入：head = [1,2], pos = 0
@@ -34,7 +34,7 @@
 
 示例 3：
 
-![3](./images/linkCycle3.png)
+![3](./images/linkcycle3.png)
 
 ```
 输入：head = [1], pos = -1
