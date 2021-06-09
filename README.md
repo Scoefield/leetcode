@@ -14,6 +14,10 @@ leetcode practice
 - [无重复字符的最长子串](https://github.com/Scoefield/leetcode/blob/main/solution/string/lenOfLongestSubStr/README.md)
 - [最长公共前缀](https://github.com/Scoefield/leetcode/blob/main/solution/string/longestCommPrefix//README.md)
 
+## 数组
+
+- [删除有序数组中的重复项](https://github.com/Scoefield/leetcode/blob/main/solution/array/removeDuplicates//README.md)
+
 
 ## 动态规划
 
