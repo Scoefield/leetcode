@@ -130,6 +130,6 @@ func GetIntersectionNode(headA *Node, headB *Node) *Node {
 
 #### 复杂度分析
 
-- 时间复杂度：O(m+n)O(m+n)，其中 mm 和 nn 是分别是链表 \textit{headA}headA 和 \textit{headB}headB 的长度。两个指针同时遍历两个链表，每个指针遍历两个链表各一次。
+- 时间复杂度：O(m+n)，其中 mm 和 nn 是分别是链表 headA 和 headB 的长度。两个指针同时遍历两个链表，每个指针遍历两个链表各一次。
 
-- 空间复杂度：O(1)O(1)。
+- 空间复杂度：O(1)。
