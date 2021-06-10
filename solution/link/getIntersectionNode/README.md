@@ -62,7 +62,7 @@
 
 - 如果链表 headB 中的所有节点都不在哈希集合中，则两个链表不相交，返回 null。
 
-#### Golang 代码实现
+#### Golang 代码实现及其测试代码
 
 ```go
 func getIntersectionNode(headA, headB *ListNode) *ListNode {
@@ -72,7 +72,7 @@ func getIntersectionNode(headA, headB *ListNode) *ListNode {
      }
      for tmp := headB; tmp != nil; tmp = tmp.Next {
          if vis[tmp] {
-             return tm其测试代码p
+             return tmp
          }
      }
      return nil
@@ -130,6 +130,6 @@ func GetIntersectionNode(headA *Node, headB *Node) *Node {
 
 #### 复杂度分析
 
-- 时间复杂度：O(m+n)O(m+n)，其中 mm 和 nn 是分别是链表 \textit{headA}headA 和 \textit{headB}headB 的长度。两个指针同时遍历两个链表，每个指针遍历两个链表各一次。
+- 时间复杂度：O(m+n)，其中 mm 和 nn 是分别是链表 headA 和 headB 的长度。两个指针同时遍历两个链表，每个指针遍历两个链表各一次。
 
-- 空间复杂度：O(1)O(1)。
+- 空间复杂度：O(1)。

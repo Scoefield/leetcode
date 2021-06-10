@@ -5,8 +5,8 @@ import (
 )
 
 func MergeTwoLists(l1 *Node, l2 *Node) *Node {
-	dummy := &Node{}
-	cur := dummy
+	head := &Node{}
+	cur := head
 	for l1 != nil && l2 != nil {
 		if l1.Data < l2.Data {
 			cur.Next = l1
@@ -22,7 +22,7 @@ func MergeTwoLists(l1 *Node, l2 *Node) *Node {
 	} else if l2 != nil {
 		cur.Next = l2
 	}
-	return dummy.Next
+	return head.Next
 }
 
 func main() {

@@ -27,9 +27,9 @@ func main() {
 	link := CreateLinkList()
 
 	// 测试 在头节点添加元素
-	link.AddInHead(23)
-	link.AddInHead(22)
-	link.AddInHead(21)
+	link.Append(23)
+	link.Append(22)
+	link.Append(21)
 
 	hasCycle := LinkHasCycle(link.Header)
 	fmt.Println(hasCycle)	// false
