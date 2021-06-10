@@ -2,7 +2,6 @@ package main
 
 import (
 	. "GitCode/leetcode/solution/link/comm"
-	"fmt"
 )
 
 func SwapPairs(head *Node) *Node {
@@ -20,13 +19,6 @@ func SwapPairs(head *Node) *Node {
 	return dummy.Next
 }
 
-func printNodeByHead(head *Node) {
-	for head != nil {
-		fmt.Println(head.Data)
-		head = head.Next
-	}
-}
-
 func main() {
 	// 创建单向链表实例
 	link := CreateLinkList()
@@ -41,5 +33,5 @@ func main() {
 	link.ScanLinkList()
 
 	data := SwapPairs(link.Header)
-	printNodeByHead(data)
+	PrintNodeByHead(data)
 }
