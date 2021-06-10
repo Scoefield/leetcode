@@ -62,7 +62,7 @@
 
 - 如果链表 headB 中的所有节点都不在哈希集合中，则两个链表不相交，返回 null。
 
-#### Golang 代码实现
+#### Golang 代码实现及其测试代码
 
 ```go
 func getIntersectionNode(headA, headB *ListNode) *ListNode {
@@ -72,7 +72,7 @@ func getIntersectionNode(headA, headB *ListNode) *ListNode {
      }
      for tmp := headB; tmp != nil; tmp = tmp.Next {
          if vis[tmp] {
-             return tm其测试代码p
+             return tmp
          }
      }
      return nil
