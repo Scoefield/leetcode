@@ -21,6 +21,7 @@ leetcode practice
 
 ## 数组
 
+- [多数元素](https://github.com/Scoefield/leetcode/blob/main/solution/array/majorityElement/README.md)
 - [删除有序数组中的重复项](https://github.com/Scoefield/leetcode/blob/main/solution/array/removeDuplicates//README.md)
 
 
