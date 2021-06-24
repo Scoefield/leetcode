@@ -74,6 +74,43 @@ func linkCycle(head *Node) bool {
 	return false
 }
 
+func demo5(headA, headB *Node) *Node {
+	if headA == nil || headB == nil {
+		return nil
+	}
+
+	pa, pb := headA, headB
+	for pa != pb {
+		if pa == nil {
+			pa = headB
+		} else {
+			pa = pa.Next
+		}
+
+		if pb == nil {
+			pb = headA
+		} else {
+			pb = pb.Next
+		}
+	}
+	return pa
+}
+
+func kthToLast(head *Node, k int) int {
+    pa, pb := head, head
+	
+	for k > 0 {
+		pb = pb.Next
+		k--
+	}
+
+	for pb != nil {
+		pb = pb.Next
+		pa = pa.Next
+	}
+	return pa.Data
+}
+
 func main() {
 	link := CreateLinkList()
 	link.Append(1)

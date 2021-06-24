@@ -23,7 +23,7 @@ leetcode practice
 
 - [多数元素](https://github.com/Scoefield/leetcode/blob/main/solution/array/majorityElement/README.md)
 - [删除有序数组中的重复项](https://github.com/Scoefield/leetcode/blob/main/solution/array/removeDuplicates/README.md)
-- [移除元素(https://github.com/Scoefield/leetcode/blob/main/solution/array/removeElement//README.md)
+- [移除元素](https://github.com/Scoefield/leetcode/blob/main/solution/array/removeElement//README.md)
 
 
 ## 动态规划
