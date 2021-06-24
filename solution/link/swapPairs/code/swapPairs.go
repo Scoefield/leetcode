@@ -5,10 +5,7 @@ import (
 )
 
 func SwapPairs(head *Node) *Node {
-	dummy := &Node{
-		Data: 0,
-		Next: nil,
-	}
+	dummy := &Node{}
 	pre := dummy
 	cur := head
 	for cur != nil && cur.Next != nil {
@@ -28,8 +25,10 @@ func main() {
 	link.AddInHead(23)
 	link.AddInHead(22)
 	link.AddInHead(21)
+	link.AddInHead(20)
 
 	// 遍历打印单向链表元素
+	// [21, 22, 23, 24]
 	link.ScanLinkList()
 
 	data := SwapPairs(link.Header)
