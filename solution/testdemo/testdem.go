@@ -111,6 +111,18 @@ func kthToLast(head *Node, k int) int {
 	return pa.Data
 }
 
+func swapNode(head *Node) *Node {
+	dumy := &Node{}
+	pre := dumy
+	cur := head
+	for cur != nil && cur.Next != nil {
+		cur.Next, cur.Next.Next, pre.Next = cur.Next.Next, cur, cur.Next
+		cur = pre.Next
+		pre = cur.Next
+	}
+	return dumy.Next
+}
+
 func main() {
 	link := CreateLinkList()
 	link.Append(1)

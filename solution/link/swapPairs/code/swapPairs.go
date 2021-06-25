@@ -5,6 +5,10 @@ import (
 )
 
 func SwapPairs(head *Node) *Node {
+	if head == nil || head.Next == nil {
+		return head
+	}
+
 	dummy := &Node{}
 	pre := dummy
 	cur := head
@@ -22,10 +26,10 @@ func main() {
 
 	// 测试 在头节点添加元素
 	link.AddInHead(24)
-	link.AddInHead(23)
-	link.AddInHead(22)
-	link.AddInHead(21)
-	link.AddInHead(20)
+	// link.AddInHead(23)
+	// link.AddInHead(22)
+	// link.AddInHead(21)
+	// link.AddInHead(20)
 
 	// 遍历打印单向链表元素
 	// [21, 22, 23, 24]
