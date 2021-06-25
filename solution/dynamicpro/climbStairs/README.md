@@ -1,4 +1,4 @@
-# [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs)
+# [70.爬楼梯](https://leetcode-cn.com/problems/climbing-stairs)
 
 ## 题目描述
 
