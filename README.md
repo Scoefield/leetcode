@@ -26,6 +26,7 @@ leetcode practice
 - [移除元素](https://github.com/Scoefield/leetcode/blob/main/solution/array/removeElement/README.md)
 - [数组重复的数字](https://github.com/Scoefield/leetcode/blob/main/solution/array/findRepeatNumber/README.md)
 - [旋转数组](https://github.com/Scoefield/leetcode/blob/main/solution/array/rotate/README.md)
+- [合并两个有序数组](https://github.com/Scoefield/leetcode/blob/main/solution/array/mergeSortArray/README.md)
 
 
 ## 动态规划
