@@ -28,6 +28,7 @@ leetcode practice
 - [旋转数组](https://github.com/Scoefield/leetcode/blob/main/solution/array/rotate/README.md)
 - [合并两个有序数组](https://github.com/Scoefield/leetcode/blob/main/solution/array/mergeSortArray/README.md)
 - [寻找旋转排序数组中的最小值](https://github.com/Scoefield/leetcode/blob/main/solution/array/findMinInRotateSort/README.md)
+- [除自身以外数组的乘积](https://github.com/Scoefield/leetcode/blob/main/solution/array/productExecptSelf/README.md)
 
 
 ## 动态规划
