@@ -2,8 +2,7 @@ package main
 
 import (
 	. "GitCode/leetcode/solution/link/comm"
-	"hash"
-	// "fmt"
+	"fmt"
 )
 
 func demo1(head *Node) *Node {
@@ -123,17 +122,31 @@ func swapNode(head *Node) *Node {
 	return dumy.Next
 }
 
+func demo6(nums []int, k int) {
+	if nums == nil || len(nums) == 0 || k > len(nums) {
+		return
+	}
+
+	var ret []int
+	ret = append(nums[len(nums)-k:], nums[:len(nums)-k]...)
+	copy(nums, ret)
+	fmt.Println(nums)
+}
+
 func main() {
 	link := CreateLinkList()
 	link.Append(1)
-	link.Append(2)
-	link.Append(4)
+	// link.Append(2)
+	// link.Append(4)
 
-	link2 := CreateLinkList()
-	link2.Append(1)
-	link2.Append(3)
-	link2.Append(4)
+	// link2 := CreateLinkList()
+	// link2.Append(1)
+	// link2.Append(3)
+	// link2.Append(4)
 
-	mergeHeadNode := demo4(link.Header, link2.Header)
-	PrintNodeByHead(mergeHeadNode)
+	// mergeHeadNode := demo4(link.Header, link2.Header)
+	// PrintNodeByHead(mergeHeadNode)
+
+	nums := []int{1,2,3,4,5,6,7}
+	demo6(nums, 3)
 }
