@@ -42,4 +42,5 @@ leetcode practice
 - [二叉树的中序遍历](https://github.com/Scoefield/leetcode/blob/main/solution/binary/inorderTraversal/README.md)
 - [对称二叉树](https://github.com/Scoefield/leetcode/blob/main/solution/binary/isSymmetric/README.md)
 - [翻转二叉树](https://github.com/Scoefield/leetcode/blob/main/solution/binary/invertTree/README.md)
+- [路径总和](https://github.com/Scoefield/leetcode/blob/main/solution/binary/hasPathSum/README.md)
 
