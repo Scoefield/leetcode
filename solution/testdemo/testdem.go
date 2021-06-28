@@ -133,6 +133,59 @@ func demo6(nums []int, k int) {
 	fmt.Println(nums)
 }
 
+func merge(nums1 []int, m int, nums2 []int, n int) {
+	k := m + n - 1
+	i := m - 1
+	j := n - 1
+	for j >= 0 {
+		if i >= 0 && nums1[i] > nums2[j] {
+			nums1[k] = nums1[i]
+			i--
+		} else {
+			nums1[k] = nums2[j]
+			j--
+		}
+		k--
+	}
+}
+
+func productExceptSelf(nums []int) []int {
+	n := len(nums)
+	output := make([]int, n)
+	l, r := 1, 1
+	for i := 0; i < n; i++ {
+		output[i] = l
+		l *= nums[i]
+	}
+	for i := n - 1; i >= 0; i-- {
+		output[i] *= r
+		r *= nums[i]
+	}
+	return output
+}
+
+func removeDuplicates(nums []int) int {
+	cnt, n := 0, len(nums)
+	for i := 0; i < n; i++ {
+		if nums[i] == nums[i+1] {
+			cnt++
+		}
+	}
+	return n - cnt
+}
+
+func removeElement(nums []int, val int) int {
+	cnt, n := 0, len(nums)
+	for i := 0; i < n; i++ {
+		if nums[i] == val {
+			cnt++
+		} else {
+			nums[i - cnt] = nums[i]
+		}
+	}
+	return n - cnt
+}
+
 func main() {
 	link := CreateLinkList()
 	link.Append(1)
