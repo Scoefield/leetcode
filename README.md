@@ -43,4 +43,5 @@ leetcode practice
 - [对称二叉树](https://github.com/Scoefield/leetcode/blob/main/solution/binary/isSymmetric/README.md)
 - [翻转二叉树](https://github.com/Scoefield/leetcode/blob/main/solution/binary/invertTree/README.md)
 - [路径总和](https://github.com/Scoefield/leetcode/blob/main/solution/binary/hasPathSum/README.md)
+- [二叉搜索树的最近公共祖先](https://github.com/Scoefield/leetcode/blob/main/solution/binary/lowestCommAncestor/README.md)
 
