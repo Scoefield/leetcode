@@ -45,6 +45,10 @@ package main
  
  
  func SwapPairs(head *Node) *Node {
+	if head == nil || head.Next == nil {
+		return head
+	}
+	
  	dummy := &Node{}
  	pre := dummy
  	cur := head
