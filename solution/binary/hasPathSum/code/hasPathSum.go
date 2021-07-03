@@ -19,7 +19,7 @@ func hasPathSum(root *TreeNode, targetSum int) bool {
     // return checkPathSum(root, targetSum)
 
     // 递归写法二：
-  if root == nil {
+    if root == nil {
 		return false
 	}
 	if root.Left == nil && root.Right == nil {
