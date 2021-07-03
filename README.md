@@ -17,6 +17,8 @@ leetcode practice
 
 - [无重复字符的最长子串](https://github.com/Scoefield/leetcode/blob/main/solution/string/lenOfLongestSubStr/README.md)
 - [最长公共前缀](https://github.com/Scoefield/leetcode/blob/main/solution/string/longestCommPrefix/README.md)
+- [同构字符串](https://github.com/Scoefield/leetcode/blob/main/solution/string/isIsomorphic/README.md)
+- [有效的括号](https://github.com/Scoefield/leetcode/blob/main/solution/string/isValid/README.md)
 
 
 ## 数组
