@@ -29,6 +29,12 @@
 输出：true
 ```
 
+示例 4：
+
+```
+输入：s = "badc", t = "baba"
+输出：false
+```
 
 提示：
 
@@ -52,7 +58,7 @@ func isIsomorphic(s string, t string) bool {
     if len(s) != len(t) {
 		return false
 	}
-    return isIsomorphicHelper(s, t) && isIsomorphicHelper(t, s)
+    return isIsomorphicHelper(s, t)
 }
 
 func isIsomorphicHelper(s string, t string) bool {

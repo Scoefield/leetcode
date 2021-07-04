@@ -66,6 +66,7 @@ func findMinInRotateSortArray(nums []int) int {
 		return nums[0]
 	}
 	for l < r {
+		// 到这一步有点像二分法
 		m := (l+r) >> 1  // 取中间, ==> (l+r)/2
 		if nums[m] > nums[r] {
 			l = m + 1

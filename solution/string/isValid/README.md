@@ -95,7 +95,7 @@ func isLeft(s byte) bool {
 	return false
 }
 
-// 这里也可以用一个 map 来存放
+// 这里也可以用一个 map 来存放（见解法二）
 func findLeft(s byte) byte {
 	if s == ')' {
 		return '('
@@ -107,6 +107,31 @@ func findLeft(s byte) byte {
 		return '{'
 	}
 	return ' '
+}
+
+// 解法二
+func isValid2(s string) bool {
+	if len(s) == 0 || len(s) == 1{
+		return false
+	}
+	mapLeft := map[byte]byte{
+		')': '(',
+		'}': '{',
+		']': '[',
+	}
+	stack := []byte{}
+	for i := 0; i < len(s); i++ {
+		if mapLeft[s[i]] > 0 {
+			if len(stack) > 0 && stack[len(stack)-1] == mapLeft[s[i]] {
+				stack = stack[:len(stack)-1]
+			} else {
+				return false
+			}
+		} else {
+			stack = append(stack, s[i])
+		}
+	}
+	return len(stack) == 0
 }
 
 // @lc code=end

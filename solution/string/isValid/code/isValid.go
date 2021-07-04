@@ -5,6 +5,7 @@
  */
 
 // @lc code=start
+// 解法一
 func isValid(s string) bool {
 	if len(s) == 0 {
 		return false
@@ -44,4 +45,28 @@ func findLeft(s byte) byte {
 	return ' '
 }
 
+// 解法二
+func isValid2(s string) bool {
+	if len(s) == 0 || len(s) == 1{
+		return false
+	}
+	mapLeft := map[byte]byte{
+		')': '(',
+		'}': '{',
+		']': '[',
+	}
+	stack := []byte{}
+	for i := 0; i < len(s); i++ {
+		if mapLeft[s[i]] > 0 {
+			if len(stack) > 0 && stack[len(stack)-1] == mapLeft[s[i]] {
+				stack = stack[:len(stack)-1]
+			} else {
+				return false
+			}
+		} else {
+			stack = append(stack, s[i])
+		}
+	}
+	return len(stack) == 0
+}
 // @lc code=end
