@@ -27,6 +27,7 @@ func rotate(nums []int, k int) {
 
 	// 方法二：数组翻转
 	k %= n
+	fmt.Println(k)
 	reverse(nums)
 	reverse(nums[:k])
 	reverse(nums[k:])
@@ -34,6 +35,6 @@ func rotate(nums []int, k int) {
 }
 
 func main() {
-	nums := []int{1,2,3,4,5,6,7}
-	rotate(nums, 3)
+	nums := []int{1,2,3,4}
+	rotate(nums, 5)
 }
