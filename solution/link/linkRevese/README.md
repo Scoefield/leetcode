@@ -1,4 +1,4 @@
-# [206.链表翻转](https://leetcode-cn.com/problems/reverse-linked-list/)
+# [206.反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)
 
 ## 题目描述
 
@@ -10,6 +10,10 @@
 输入：linkList = [3,2,0,-4]
 输出：linkList = [-4,0,2,3]
 ```
+
+## 解题思路
+
+在遍历链表时，将当前节点的 \textit{next}next 指针改为指向前一个节点。由于节点没有引用其前一个节点，因此必须事先存储其前一个节点。在更改引用之前，还需要存储后一个节点。最后返回新的头引用。
 
 ## Golang
 

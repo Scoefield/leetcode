@@ -4,7 +4,7 @@ leetcode practice
 ## 链表
 
 - [环形链表](https://github.com/Scoefield/leetcode/blob/main/solution/link/linkListCycle/README.md)
-- [链表翻转](https://github.com/Scoefield/leetcode/blob/main/solution/link/linkRevese/README.md)
+- [反转链表](https://github.com/Scoefield/leetcode/blob/main/solution/link/linkRevese/README.md)
 - [从尾到头打印链表](https://github.com/Scoefield/leetcode/blob/main/solution/link/printLink/README.md)
 - [单链表各种操作](https://github.com/Scoefield/leetcode/blob/main/solution/link/singleLinkOpt/code/singleLink.go)
 - [返回倒数第k个节点](https://github.com/Scoefield/leetcode/blob/main/solution/link/kthToLast/README.md)
@@ -17,6 +17,8 @@ leetcode practice
 
 - [无重复字符的最长子串](https://github.com/Scoefield/leetcode/blob/main/solution/string/lenOfLongestSubStr/README.md)
 - [最长公共前缀](https://github.com/Scoefield/leetcode/blob/main/solution/string/longestCommPrefix/README.md)
+- [同构字符串](https://github.com/Scoefield/leetcode/blob/main/solution/string/isIsomorphic/README.md)
+- [有效的括号](https://github.com/Scoefield/leetcode/blob/main/solution/string/isValid/README.md)
 
 
 ## 数组
@@ -29,6 +31,7 @@ leetcode practice
 - [合并两个有序数组](https://github.com/Scoefield/leetcode/blob/main/solution/array/mergeSortArray/README.md)
 - [寻找旋转排序数组中的最小值](https://github.com/Scoefield/leetcode/blob/main/solution/array/findMinInRotateSortArray/README.md)
 - [除自身以外数组的乘积](https://github.com/Scoefield/leetcode/blob/main/solution/array/productExceptSelf/README.md)
+- [独一无二的出现次数](https://github.com/Scoefield/leetcode/blob/main/solution/array/uniqueOccurrences/README.md)
 
 
 ## 动态规划
@@ -43,4 +46,6 @@ leetcode practice
 - [对称二叉树](https://github.com/Scoefield/leetcode/blob/main/solution/binary/isSymmetric/README.md)
 - [翻转二叉树](https://github.com/Scoefield/leetcode/blob/main/solution/binary/invertTree/README.md)
 - [路径总和](https://github.com/Scoefield/leetcode/blob/main/solution/binary/hasPathSum/README.md)
+- [二叉搜索树的最近公共祖先](https://github.com/Scoefield/leetcode/blob/main/solution/binary/lowestCommAncestor/README.md)
+- [二叉树的最近公共祖先](https://github.com/Scoefield/leetcode/blob/main/solution/binary/lowestCommAncestor2/README.md)
 
