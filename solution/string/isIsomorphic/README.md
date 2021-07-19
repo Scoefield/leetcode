@@ -55,7 +55,7 @@ func isIsomorphic(s string, t string) bool {
     if len(s) != len(t) {
 		return false
 	}
-    return isIsomorphicHelper(s, t)
+    return isIsomorphicHelper(s, t) && isIsomorphicHelper(t, s)
 }
 
 func isIsomorphicHelper(s string, t string) bool {
