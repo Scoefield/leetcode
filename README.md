@@ -38,6 +38,7 @@ leetcode practice
 ## 动态规划
 
 - [爬楼梯](https://github.com/Scoefield/leetcode/blob/main/solution/dynamicpro/climbStairs/README.md)
+- [最长回文子串](https://github.com/Scoefield/leetcode/blob/main/solution/dynamicpro/longestPalindrome/README.md)
 
 ## 二叉树
 
