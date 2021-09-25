@@ -1,4 +1,4 @@
-# [53.最大子序和](https://leetcode-cn.com/problems/longest-palindromic-substring/)
+# [53.最大子序和](https://leetcode-cn.com/problems/maximum-subarray/)
 
 ## 题目描述
 

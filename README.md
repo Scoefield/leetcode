@@ -3,7 +3,7 @@ leetcode practice
 
 ## 链表
 
-- [环形链表](https://github.com/Scoefield/leetcode/blob/main/solution/link/linkListCycle/README.md)
+- [141.环形链表](https://github.com/Scoefield/leetcode/blob/main/solution/link/linkListCycle/README.md)
 - [反转链表](https://github.com/Scoefield/leetcode/blob/main/solution/link/linkRevese/README.md)
 - [从尾到头打印链表](https://github.com/Scoefield/leetcode/blob/main/solution/link/printLink/README.md)
 - [单链表各种操作](https://github.com/Scoefield/leetcode/blob/main/solution/link/singleLinkOpt/code/singleLink.go)
@@ -28,11 +28,12 @@ leetcode practice
 - [移除元素](https://github.com/Scoefield/leetcode/blob/main/solution/array/removeElement/README.md)
 - [数组重复的数字](https://github.com/Scoefield/leetcode/blob/main/solution/array/findRepeatNumber/README.md)
 - [旋转数组](https://github.com/Scoefield/leetcode/blob/main/solution/array/rotate/README.md)
-- [合并两个有序数组](https://github.com/Scoefield/leetcode/blob/main/solution/array/mergeSortArray/README.md)
+- [88.合并两个有序数组](https://github.com/Scoefield/leetcode/blob/main/solution/array/mergeSortArray/README.md)
 - [寻找旋转排序数组中的最小值](https://github.com/Scoefield/leetcode/blob/main/solution/array/findMinInRotateSortArray/README.md)
 - [除自身以外数组的乘积](https://github.com/Scoefield/leetcode/blob/main/solution/array/productExceptSelf/README.md)
 - [独一无二的出现次数](https://github.com/Scoefield/leetcode/blob/main/solution/array/uniqueOccurrences/README.md)
 - [数组中的第K个最大元素](https://github.com/Scoefield/leetcode/blob/main/solution/array/findKthLargest/README.md)
+- [4.寻找两个正序数组的中位数](https://github.com/Scoefield/leetcode/blob/main/solution/array/findMedianSortedArrays/README.md)
 
 
 ## 动态规划
