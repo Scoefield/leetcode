@@ -11,6 +11,7 @@ leetcode practice
 - [两两交换链表中的节点](https://github.com/Scoefield/leetcode/blob/main/solution/link/swapPairs/README.md)
 - [合并两个有序链表](https://github.com/Scoefield/leetcode/blob/main/solution/link/mergeTwoLists/README.md)
 - [相交链表](https://github.com/Scoefield/leetcode/blob/main/solution/link/getIntersectionNode/README.md)
+- [234.回文链表](https://github.com/Scoefield/leetcode/blob/main/solution/link/isPalindrome/README.md)
 
 
 ## 字符串
