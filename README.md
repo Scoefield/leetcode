@@ -12,6 +12,7 @@ leetcode practice
 - [合并两个有序链表](https://github.com/Scoefield/leetcode/blob/main/solution/link/mergeTwoLists/README.md)
 - [相交链表](https://github.com/Scoefield/leetcode/blob/main/solution/link/getIntersectionNode/README.md)
 - [234.回文链表](https://github.com/Scoefield/leetcode/blob/main/solution/link/isPalindrome/README.md)
+- [25.K 个一组翻转链表](https://github.com/Scoefield/leetcode/blob/main/solution/link/reverseKGroup/README.md)
 
 
 ## 字符串
@@ -47,7 +48,7 @@ leetcode practice
 
 - [二叉树的前序遍历](https://github.com/Scoefield/leetcode/blob/main/solution/binary/preorderTraversal/README.md)
 - [二叉树的后序遍历](https://github.com/Scoefield/leetcode/blob/main/solution/binary/postorderTraversal/README.md)
-- [二叉树的中序遍历](https://github.com/Scoefield/leetcode/blob/main/solution/binary/inorderTraversal/README.md)
+- [94.二叉树的中序遍历](https://github.com/Scoefield/leetcode/blob/main/solution/binary/inorderTraversal/README.md)
 - [对称二叉树](https://github.com/Scoefield/leetcode/blob/main/solution/binary/isSymmetric/README.md)
 - [翻转二叉树](https://github.com/Scoefield/leetcode/blob/main/solution/binary/invertTree/README.md)
 - [路径总和](https://github.com/Scoefield/leetcode/blob/main/solution/binary/hasPathSum/README.md)
