@@ -32,7 +32,7 @@ func reverseNode(head, tail *Node) (*Node, *Node) {
 	for prev != tail {
 		cur, cur.Next, prev = cur.Next, prev, cur
 	}
-	return head, tail
+	return tail, head
 }
 
 func main() {

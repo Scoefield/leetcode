@@ -186,6 +186,108 @@ func removeElement(nums []int, val int) int {
 	return n - cnt
 }
 
+func reverseList(head *Node) *Node {
+	cur := head
+	pre := &Node{}
+	for cur != nil {
+		cur, cur.Next, pre = cur.Next, pre, cur
+	}
+	return pre
+}
+
+// lru cache demo test
+type MyNode struct {
+	Key int
+	Value int
+	Next *MyNode
+	Pre *MyNode
+}
+
+type LRUCache struct {
+	Cap int
+	Map map[int]*MyNode
+	Head *MyNode
+	Last *MyNode
+}
+
+func NewLRUCache(cap int) *LRUCache {
+	cache := &LRUCache{
+		Cap: cap,
+		Map: make(map[int]*MyNode),
+		Head: &MyNode{},
+		Last: &MyNode{},
+	}
+	cache.Head.Next = cache.Last
+	cache.Last.Pre = cache.Head
+	return cache
+}
+
+func (l *LRUCache) setHead(node *MyNode) {
+	l.Head.Next.Pre = node
+	node.Next = l.Head.Next
+	l.Head.Next = node
+	node.Pre = l.Head
+}
+
+func (l *LRUCache) remove(node *MyNode) {
+	node.Next.Pre = node.Pre
+	node.Pre.Next = node.Next
+}
+
+func (l *LRUCache) Get(key int) int {
+	node, ok := l.Map[key]
+	if !ok {
+		return -1
+	}
+	l.remove(node)
+	l.setHead(node)
+	return node.Value
+}
+
+func (l *LRUCache) Put(key, val int) {
+	node, ok := l.Map[key]
+	if ok {
+		l.remove(node)
+	} else {
+		if len(l.Map) == l.Cap {
+			delete(l.Map, l.Last.Pre.Key)
+			l.remove(l.Last.Pre)
+		}
+		node = &MyNode{Key: key, Value: val}
+		l.Map[key] = node
+	}
+	node.Value = val
+	l.setHead(node)
+}
+
+type ListNode struct {
+	Value int
+	Next *ListNode
+}
+
+func mergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode {
+	cur := &ListNode{}
+	for l1 != nil && l2 != nil {
+		if l1.Value < l2.Value {
+			cur = l1
+			l1 = l1.Next
+		} else {
+			cur = l2
+			l2 = l2.Next
+		}
+		cur = cur.Next
+	}
+	if l1 != nil {
+		cur = l1
+	}
+	if l2 != nil {
+		cur = l2
+	}
+
+	return cur
+}
+
+
 func main() {
 	link := CreateLinkList()
 	link.Append(1)
