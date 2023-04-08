@@ -6,20 +6,14 @@ import (
 )
 
 func LinkHasCycle(head *Node) bool {
-	if head == nil || head.Next == nil {
-		return false
-	}
-
-	slow, fast := head, head.Next
-	for {
-		if fast == nil || fast.Next == nil {
-			return  false
-		}
+	slow, fast := head, head
+	for fast != nil && fast.Next != nil {
+		slow, fast = slow.Next, fast.Next.Next
 		if slow == fast {
 			return true
 		}
-		slow, fast = slow.Next, fast.Next.Next
 	}
+	return false
 }
 
 func main() {
